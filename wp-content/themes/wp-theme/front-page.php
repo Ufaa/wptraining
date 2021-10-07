@@ -4,7 +4,8 @@
   <div class="flex">
     <div class="container-top">
       <div class="new-articles">
-        <h2 class="section-title">NEW ARTICLES</h2>
+        <h4 class="section-title2">New Post</h4>
+        <h2 class="section-title">新着記事</h2>
         <div class="flex">
           <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -22,7 +23,6 @@
                   </p>
                 <?php endif; ?>
                 <div class="text-content">
-                  <p class="article__date"><?php echo get_the_date('Y-m-d'); ?></p>
                   <h3 class="article__title">
                     <?php
                     if (mb_strlen($post->post_title, 'UTF-8') > 30) {
@@ -33,7 +33,8 @@
                     }
                     ?>
                   </h3>
-                  <div class="article-tags">
+                  <p class="article__date"><?php echo get_the_date('Y-m-d'); ?></p>
+                  <!--<div class="article-tags">
                     <p class="article-tags__inner">
                       <?php $posttags = get_the_tags();
                       if ($posttags) {
@@ -42,7 +43,7 @@
                         }
                       } ?>
                     </p>
-                  </div>
+                  </div>-->
                 </div>
               </a>
             <?php endwhile; ?>
@@ -51,7 +52,7 @@
           <?php endif; ?>
         </div>
       </div>
-      <div class="category-sec">
+      <!--<div class="category-sec">
         <h2 class="section-title">INTERVIEW</h2>
         <div class="flex">
           <?php
@@ -117,8 +118,8 @@
           ?>
           <a href="<?php echo esc_url($category_link); ?>" class="news-articles_link_text">インタビューの一覧はこちら→</a>
         </p>
-      </div>
-      <div id="news" class="wrap">
+      </div>-->
+      <!--<div id="news" class="wrap">
         <h2 class="section-title">BRAND NEWS</h2>
         <div class="news-contain">
           <ul>
@@ -131,10 +132,10 @@
             );
             if (have_posts()) : while ($posts->have_posts()) : $posts->the_post();
             ?>
-                <!-- ニュースというカスタム投稿タイプのサブループ開始 -->
+                <!-- ニュースというカスタム投稿タイプのサブループ開始 
                 <li class="news-list">
                   <p class="news-date"><?php echo get_the_date('Y-m-d'); ?></p>
-                  <!-- 投稿日付の出力 -->
+                  <!-- 投稿日付の出力 
                   <p class="news-category">
                     <?php
                     $days = 3;
@@ -149,24 +150,24 @@
                       endif;
                     endif;
                     ?>
-                    <!-- 3日以内に投稿されている投稿にはNewと表示をする -->
+                    <!-- 3日以内に投稿されている投稿にはNewと表示をする 
                   </p>
                   <a href="<?php the_permalink(); ?>" class="news-title">
                     <?php the_title(); ?>
-                    <!-- タイトルの出力 -->
+                    <!-- タイトルの出力 
                   </a>
                 </li>
             <?php endwhile;
             endif;
             wp_reset_query(); ?>
-            <!-- サブループ終了 -->
+            <!-- サブループ終了 
           </ul>
           <p class="news-articles_link">
             <a href="<?php echo get_post_type_archive_link('news'); ?>" class="news-articles_link_text">ニュース一覧はこちら→</a>
-            <!-- ニュースアーカイブページへのリンク -->
+            <!-- ニュースアーカイブページへのリンク 
           </p>
         </div>
-      </div>
+      </div>-->
     </div>
     <?php get_sidebar(); ?>
   </div>

@@ -64,3 +64,5 @@ function wpcf7_autop_return_false()
 {
   return false;
 }
+
+add_theme_support('custom-header');
