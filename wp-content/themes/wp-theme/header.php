@@ -29,16 +29,18 @@
       <div class="header-about">
         <ul>
           <li>
-            <a href="<?php echo get_category_link(4); ?>">HTML</a>
+            <a href="http://localhost/wptraining/category/html/">HTML</a>
           </li>
           <li>
-            <a href="<?php echo get_category_link(2); ?>">CSS</a>
+            <a href="http://localhost/wptraining/category/css/">CSS</a>
           </li>
           <li>
-            <a href="<?php echo home_url("contact"); ?>">JavaScript</a>
+            <a href="http://localhost/wptraining/category/javascript/">JavaScript</a>
           </li>
-          <li><a href="https://estra.jp">PHP</a></li>
-          <li><a href="https://coachtech.site">MySQL</a></li>
+          <li><a href="http://localhost/wptraining/category/php/">PHP</a>
+          </li>
+          <li><a href="http://localhost/wptraining/category/mysql/">MySQL</a>
+          </li>
         </ul>
       </div>
     </div>

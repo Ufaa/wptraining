@@ -53,7 +53,7 @@ img {
 }
 
 body {
-  background: #fafafa;
+  background: #e4e3e3da;
 }
 
 /*------------------------*/
@@ -120,11 +120,23 @@ body {
   background: url(./img/media__firstview.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 0;
-  padding-top: 40%;
+  padding-top: 30%;
   position: relative;
+  width: 100%;
   /*margin: 0 20px;*/
   margin-bottom: 60px;
+}
+
+.media_fv-ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  font-family: "Indie Flower", cursive;
 }
 
 /* new */
@@ -524,6 +536,10 @@ textarea {
   border-bottom: 1px dashed #bbb;
 }
 
+.banner img {
+  border-radius: 15px;
+}
+
 /* 検索フォーム */
 .searchform {
   position: relative;
@@ -612,6 +628,53 @@ textarea {
   height: 20px;
   content: ">";
 }
+
+.contributer {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px #f5f5f5;
+  margin-top: 30px;
+}
+
+.contributer_icon {
+  width: 150px;
+  height: 150px;
+  background: #b31566;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contributer_name {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.category {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px #f5f5f5;
+  margin-top: 30px;
+}
+
+.category_ttl {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.category_link {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+}
+
+
 
 /* サイドバーの人気記事一覧レイアウト */
 ul.wpp-list li {

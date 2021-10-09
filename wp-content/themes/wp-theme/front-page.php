@@ -1,5 +1,11 @@
 <?php get_header(); ?>
-<div class="top-eyecatch"></div>
+<div class="top-eyecatch">
+  <h1 class="media_fv-ttl">
+    Commit to the growth
+    <br>
+    for everyone
+  </h1>
+</div>
 <main>
   <div class="flex">
     <div class="container-top">
