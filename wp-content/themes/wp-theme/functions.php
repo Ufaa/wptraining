@@ -66,3 +66,10 @@ function wpcf7_autop_return_false()
 }
 
 add_theme_support('custom-header');
+
+function kinsta_add_google_fonts()
+{
+  wp_register_style('googleFonts', '<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  wp_enqueue_style('googleFonts');
+}
+add_action('wp_enqueue_scripts', 'kinsta_add_google_fonts');
