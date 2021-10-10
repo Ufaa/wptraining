@@ -43,7 +43,7 @@ img {
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
   margin-bottom: 40px;
@@ -231,12 +231,26 @@ img {
   margin-left: 0;
 }
 
+.page-eyecatch {
+  height: 200px;
+  background-color: rgb(175, 13, 107);
+  position: relative;
+}
+
+.page-title__h1{
+  font-family: 'Indie Flower', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 main {
-  background: #fff;
-  border-radius: 15px0;
-  max-width: 780px;
-  margin: 0px auto 60px;
-  width: 90%;
+  margin: 0 70px;
+}
+
+.flex {
+  margin-top: 30px;
 }
 
 /*------------------------*/
