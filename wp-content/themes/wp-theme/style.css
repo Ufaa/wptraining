@@ -20,14 +20,13 @@ License URI: テーマのライセンスのURL
 body {
   color: #333333;
   background: #e4e3e3da;
-  font-family: 'Sawarabi Gothic', sans-serif;
+  /*font-family: 'Sawarabi Gothic', sans-serif;*/
 }
 
 .section-title {
   font-size: 20px;
   /*margin: 30 0;
   text-align: center;*/
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 img {
@@ -114,7 +113,7 @@ img {
 
 .eyecatch {
   margin: 0 auto;
-  padding: 0 20px 40px;
+  /*padding: 0 20px 40px;*/
 }
 
 .top-eyecatch {
@@ -124,9 +123,9 @@ img {
   padding-top: 30%;
   position: relative;
   width: 100%;
-  /*margin: 0 20px;*/
   margin-bottom: 60px;
 }
+
 
 .media_fv-ttl {
   position: absolute;
@@ -148,7 +147,7 @@ img {
 
 
 .text-content {
-  min-height: 130px;
+  /*min-height: 130px;*/
   position: relative;
   bottom: 30px;
   /*left: 10px;*/
@@ -159,6 +158,10 @@ img {
   max-height: 120px;
   /*width: 100%;*/
   /*box-shadow: 2px 2px 4px gray;*/
+  border-radius: 0 0 5% 5%;
+}
+.article__title {
+  margin-bottom: 20px;
 }
 
 .magazine-colum {
@@ -197,7 +200,11 @@ img {
   width: 30%;
 }
 
-.article__date,
+.article__date {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+}
 .article-tags__inner {
   font-size: 12px;
   margin: 5px;
@@ -439,22 +446,35 @@ textarea {
 }
 
 /* ------------ singlepage-------------- */
+.article-header {
+  padding: 40px 20px;
+  border-radius: 15px 15px 0 0;
+  margin-top: 60px;
+}
+
 .single-eyecatch > img {
   height: 500px;
   object-fit: cover;
 }
 
+.single--container {
+  max-width: 780px;
+  width: 90%;
+  margin: 0 auto 60px;
+}
+
 .single-container {
   background: #fff;
   position: relative;
-  top: -90px;
-  padding: 50px;
+  /*top: -90px;*/
+  /*padding: 50px;*/
   box-sizing: border-box;
   margin: 0 40px;
 }
 
 .tags-date.flex {
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .single-tag__chilg {
@@ -463,38 +483,46 @@ textarea {
 }
 
 .single-header__contain {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  padding: 40px 20px;
+  border-radius: 15px 15px 0 0;
+  margin-top: 60px;
 }
 
-.single-category-tag {
+/*.single-category-tag {
   top: 0;
   left: 0;
-}
+}*/
 
 .style__border {
-  border-left: 6px solid #707070;
-  padding: 10px;
+  /*border-left: 6px solid #707070;*/
+  /*padding: 5px 20px;*/
 }
 
 .single-title {
   font-size: 30px;
   margin-bottom: 20px;
+  margin-top: 30px;
   line-height: 1.2;
+}
+
+.main-text {
+  padding: 40px 15px 60px;
 }
 
 .main-text h2 {
   font-size: 28px;
-  border-bottom: 3px solid #707070;
+  /*border-bottom: 3px solid #707070;*/
   padding: 10px;
   margin: 20px 0;
 }
 
 .main-text h3 {
   font-size: 22px;
-  border-bottom: 2px solid #707070;
-  border-left: 10px solid #707070;
-  border-top: 2px solid #707070;
-  border-right: 2px solid #707070;
+  /*border-bottom: 2px solid #707070;*/
+  border-left: 10px solid rgb(175, 13, 107);
+  /*border-top: 2px solid #707070;
+  border-right: 2px solid #707070;*/
   padding: 10px;
   margin: 20px 0 20px 0;
 }

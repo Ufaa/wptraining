@@ -1,43 +1,51 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : the_post(); ?>
-  <div class="single-eyecatch eyecatch">
-    <?php if (has_post_thumbnail()) : ?>
-      <?php the_post_thumbnail(); ?>
-    <?php else : ?>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
-    <?php endif; ?>
-    <!-- サムネイルの表示 -->
-  </div>
-  <div class="single-container container">
-    <div class="single-header__contain">
-      <div class="style__border">
-        <?php if (has_category()) : ?>
-          <div class="category-tag single-category-tag"><?php echo get_the_category_list(' '); ?></div>
-        <?php endif; ?>
-        <!-- カテゴリーの出力 -->
-        <h1 class="single-title">
-          <?php the_title(); ?>
-          <!-- タイトルの出力 -->
-        </h1>
-        <div class="flex tags-date">
+  <div class="single--container">
+
+
+      <div class="single-container container">
+        <div class="single-header__contain">
           <div class="single-tags">
             <p class="single-tag__chilg"><?php the_tags('', '  '); ?></p>
             <!-- タグの出力 -->
           </div>
-          <p class="single-date"><?php echo get_the_date('Y-m-d'); ?></p>
-          <!-- 投稿日時の出力 -->
+          <div class="style__border">
+            <?php if (has_category()) : ?>
+              <div class="category-tag single-category-tag"><?php echo get_the_category_list(' '); ?></div>
+            <?php endif; ?>
+            <!-- カテゴリーの出力 -->
+            <h1 class="single-title">
+              <?php the_title(); ?>
+              <!-- タイトルの出力 -->
+            </h1>
+            <div class="flex tags-date">
+
+              <p class="single-date"><?php echo get_the_date('Y-m-d'); ?></p>
+              <!-- 投稿日時の出力 -->
+            </div>
+          </div>
         </div>
+
+      <div class="single-eyecatch eyecatch">
+        <?php if (has_post_thumbnail()) : ?>
+          <?php the_post_thumbnail(); ?>
+        <?php else : ?>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
+        <?php endif; ?>
+        <!-- サムネイルの表示 -->
       </div>
-    </div>
-    <div class="main-text">
-      <?php the_content(); ?>
-      <!-- 本文の出力 -->
+
+
+      <div class="main-text">
+        <?php the_content(); ?>
+        <!-- 本文の出力 -->
+      </div>
     </div>
   </div>
 <?php endif; ?>
 <!-- メインループの終了 -->
 <div class="new-articles new-articles__single">
-  <h2 class="section-title">RELATION</h2>
+  <!--<h2 class="section-title">RELATION</h2>-->
   <div class="flex">
     <?php if (has_category()) {
       $cats = get_the_category();
