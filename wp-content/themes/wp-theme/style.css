@@ -810,6 +810,7 @@ ul.wpp-list li a.wpp-post-title {
   .magazine-colum {
     width: 80%;
     margin: 0 auto;
+    border-radius: 15px; 
   }
   .magazine-colum.top-interview {
     width: 80%;
