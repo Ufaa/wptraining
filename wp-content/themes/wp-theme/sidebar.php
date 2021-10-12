@@ -17,19 +17,19 @@
     <h2 class="category_ttl">Category</h2>
     <ul>
       <li class="category_list">
-        <a href="http://localhost/wptraining/category/html/" class="category_link"> HTML</a>
+        <a href="<?php echo get_category_link(2); ?>" class="category_link"> HTML</a>
       </li>
       <li class="category_list">
-        <a href="http://localhost/wptraining/category/css/" class="category_link"> CSS</a>
+        <a href="<?php echo get_category_link(3); ?>" class="category_link"> CSS</a>
       </li>
       <li class="category_list">
-        <a href="http://localhost/wptraining/category/javascript/" class="category_link"> JavaScript</a>
+        <a href="<?php echo get_category_link(4); ?>" class="category_link"> JavaScript</a>
       </li>
       <li class="category_list">
-        <a href="http://localhost/wptraining/category/php/" class="category_link"> PHP</a>
+        <a href="<?php echo get_category_link(5); ?>" class="category_link"> PHP</a>
       </li>
       <li class="category_list">
-        <a href="http://localhost/wptraining/category/mysql/" class="category_link"> MySQL</a>
+        <a href="<?php echo get_category_link(6); ?>" class="category_link"> MySQL</a>
       </li>
     </ul>
   </div>

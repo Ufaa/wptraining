@@ -29,17 +29,17 @@
       <div class="header-about">
         <ul>
           <li>
-            <a href="http://localhost/wptraining/category/html/">HTML</a>
+            <a href="<?php echo get_category_link(2); ?>">HTML</a>
           </li>
           <li>
-            <a href="http://localhost/wptraining/category/css/">CSS</a>
+            <a href="<?php echo get_category_link(3); ?>">CSS</a>
           </li>
           <li>
-            <a href="http://localhost/wptraining/category/javascript/">JavaScript</a>
+            <a href="<?php echo get_category_link(4); ?>">JavaScript</a>
           </li>
-          <li><a href="http://localhost/wptraining/category/php/">PHP</a>
+          <li><a href="<?php echo get_category_link(5); ?>">PHP</a>
           </li>
-          <li><a href="http://localhost/wptraining/category/mysql/">MySQL</a>
+          <li><a href="<?php echo get_category_link(6); ?>">MySQL</a>
           </li>
         </ul>
       </div>
