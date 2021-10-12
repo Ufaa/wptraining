@@ -809,6 +809,7 @@ ul.wpp-list li a.wpp-post-title {
 
   .magazine-colum {
     width: 80%;
+    margin: 0 auto;
   }
   .magazine-colum.top-interview {
     width: 80%;
@@ -889,6 +890,7 @@ ul.wpp-list li a.wpp-post-title {
 
   .sidebar {
     width: 90%;
+    margin: 0 auto;
   }
 
   .page-title__h1 {
